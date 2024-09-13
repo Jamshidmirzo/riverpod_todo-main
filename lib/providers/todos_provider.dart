@@ -6,10 +6,7 @@ part 'todos_provider.g.dart';
 
 @riverpod
 class TodoList extends _$TodoList {
-  final List<Todo> _todos = [
-    Todo(id: "1", title: 'Learn Flutter', date: DateTime.now(), isDone: true),
-    Todo(id: "2", title: 'Learn Riverpod', date: DateTime.now()),
-  ];
+  final List<Todo> _todos = [];
 
   @override
   Future<List<Todo>> build() async {
